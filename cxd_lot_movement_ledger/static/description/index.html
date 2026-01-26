@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Update Product in POS | Odoo Module</title>
+</head>
+<body style="font-family: 'Inter', sans-serif; color: #212529; line-height: 1.6; background-color: #F8F9FA;">
+    <!-- Hero Section -->
+    
+    <section class="hero-section" style="background-color: #714B67; color: #FFFFFF; padding: 75px 25px; border-radius: 0 0 12px 12px;">
+        <header class="container d-flex flex-wrap justify-content-center mb-4 align-items-baseline" style="padding: 0;">
+            <a href="https://crewxdev.odoo.com/" target="_blank" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                 <div class="">
+                            <img src="./assets/com/256x256.png" alt="Crewxdev" class="img-fluid" width="75" heigth="75">
+                        </div>
+                <!-- <span class="fs-4">Simple header</span> -->
+                <div class="company-logo" style="font-weight: 700; font-size: 1.8rem; color: white; text-decoration: none;">crew<span style="color: #017E84;">x</span>dev</div>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"> <span class="version-badge" style="display: inline-block; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin: 0 5px 10px; background-color: rgba(255, 255, 255, 0.2); color: white;">Community</span></li>
+                <li class="nav-item"><span class="version-badge" style="display: inline-block; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin: 0 5px 10px; background-color: rgba(255, 255, 255, 0.2); color: white;">Enterprise</span></li>
+                <li class="nav-item"><span class="version-badge" style="display: inline-block; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin: 0 5px 10px; background-color: rgba(255, 255, 255, 0.2); color: white;">Odoo.sh</span></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="hero-title display-4 fw-bold mb-4" style="font-size: 2.5rem;color:#FFFFFF">Smart Lot Inventory Ledger</h1>
+                    <p class="hero-subtitle lead mb-4">Track every lot with live quantities, drill down into movements, and stay audit-ready — all in one clean ledger.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#features" class="btn btn-light btn-lg rounded-pill" style="color: black;">Explore Features</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill">Contact Us</a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="section" style="padding: 80px 0; background-color: #F8F9FA;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-3" style="color: #714B67;">Key Features</h2>
+                    <p class="lead" style="color: #8F8F8F;">One unified ledger for all lot and serial stock</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" style="padding: 30px; height: 100%; border-radius: 12px; background: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div class="feature-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 28px; color: white; background-color: #017E84;">
+                            <i class="fa fa-files-o" style="width:100%;line-height: 70px;text-align: center;"></i>
+                        </div>
+                        <h4 style="color: #714B67;">Complete Lot-Level Inventory Tracking</h4>
+                        <p style="color: #8F8F8F;">
+                            <ul>
+                                <li>Total purchased quantity</li>
+                                <li>Current remaining stock</li>
+                                <li>Product association</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" style="padding: 30px; height: 100%; border-radius: 12px; background: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div class="feature-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 28px; color: white; background-color: #017E84;">
+                            <i class="fa fa-clock-o" style="width:100%;line-height: 70px;text-align: center;"></i>
+                        </div>
+                        <h4 style="color: #714B67;">Real-Time Stock Accuracy</h4>
+                        <p style="color: #8F8F8F;">
+                            <ul>
+                                <li>Incoming receipts</li>
+                                <li>Outgoing deliveries</li>
+                                <li>Internal transfers</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" style="padding: 30px; height: 100%; border-radius: 12px; background: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div class="feature-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 28px; color: white; background-color: #017E84;">
+                            <i class="fa fa-list" style="width:100%;line-height: 70px;text-align: center;"></i>
+                        </div>
+                        <h4 style="color: #714B67;">Smart Grouping & Navigation</h4>
+                        <p style="color: #8F8F8F;">
+                            <ul>
+                                <li>Automatically grouped by Product</li>
+                                <li>Expand a product to view its lots</li>
+                                <li>Click Details to drill down into all movements</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" style="padding: 30px; height: 100%; border-radius: 12px; background: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div class="feature-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 28px; color: white; background-color: #017E84;">
+                            <i class="fa fa-list-alt" style="width:100%;line-height: 70px;text-align: center;"></i>
+                        </div>
+                        <h4 style="color: #714B67;">Full Audit Trail (Drill-Down)</h4>
+                        <p style="color: #8F8F8F;">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="feature-card" style="padding: 30px; height: 100%; border-radius: 12px; background: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;">
+                        <div class="feature-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 28px; color: white; background-color: #017E84;">
+                            <i class="fa fa-line-chart" style="width:100%;line-height: 70px;text-align: center;"></i>
+                        </div>
+                        <h4 style="color: #714B67;">Performance Optimized</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section with Tabs -->
+    <section class="section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs justify-content-center p-2 gap-2"
+    id="crewxTab"
+    role="tablist"
+    style="background-color: #FFFFFF26; border: 1px solid #FFFFFF26;">
+
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active fw-semibold text-white"
+           data-bs-toggle="pill"
+           data-bs-target="#screenshots"
+           role="tab"
+           aria-selected="true"
+           style="background-color: #FFFFFF26; border-radius: 0.5rem;color: #714B67 !important;font-size: large;">
+            <i class="fa fa-image me-2"></i> Screenshots
+        </a>
+    </li>
+
+    <!-- <li class="nav-item" role="presentation">
+        <a class="nav-link fw-semibold text-white"
+           data-bs-toggle="pill"
+           data-bs-target="#features-tab-content"
+           role="tab"
+           aria-selected="false"
+           style="background-color: #FFFFFF26; border-radius: 0.5rem;color: #714B67 !important">
+            <i class="fa fa-check-square-o me-2"></i> Features
+        </a>
+    </li> -->
+
+    <li class="nav-item" role="presentation">
+        <a class="nav-link fw-semibold text-white"
+           data-bs-toggle="pill"
+           data-bs-target="#releases"
+           role="tab"
+           aria-selected="false"
+           style="background-color: #FFFFFF26; border-radius: 0.5rem;color: #714B67 !important;font-size: large;">
+            <i class="fa fa-code-fork me-2"></i> Releases
+        </a>
+    </li>
+</ul>
+
+                    <div class="tab-content mt-4" id="crewxTabContent" style="padding: 40px 0;">
+                        <!-- Screenshots Tab -->
+                         <ul style="text-align: center;list-style: none;">
+                            <li style="font-size: x-large;">
+                                Navigate to Inventory → Reporting → Lot Ledger to access the report.
+                            </li>
+                         </ul>
+                        <div class="tab-pane fade show active" id="screenshots" role="tabpanel" aria-labelledby="screenshots-tab">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="screenshot-container" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);border: 1px solid black;">
+                                        <img src="assets/screenshots/screen2.png" alt="POS Auto Update Interface" class="img-fluid">
+                                    </div>
+                                    <!-- <div class="screenshot-container" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);border: 1px solid black;">
+                                        <img src="assets/screenshots/cxd_cache.gif" alt="POS Auto Update Interface" class="img-fluid">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Features Tab -->
+                        <div class="tab-pane fade" id="features-tab-content" role="tabpanel" aria-labelledby="features-tab">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="me-3" style="color: #017E84;">
+                                                    <i class="fa fa-check-circle fa-lg"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 style="color: #714B67;">Automatic Updates</h5>
+                                                    <p style="color: #8F8F8F;">Changes saved in the backend instantly appear in every open POS tab without manual intervention.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="me-3" style="color: #017E84;">
+                                                    <i class="fa fa-check-circle fa-lg"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 style="color: #714B67;">Eliminates Manual Refresh</h5>
+                                                    <p style="color: #8F8F8F;">Never worry about stale data or pressing F5 again. All updates happen automatically.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="me-3" style="color: #017E84;">
+                                                    <i class="fa fa-check-circle fa-lg"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 style="color: #714B67;">Easy Toggle</h5>
+                                                    <p style="color: #8F8F8F;">Enable or disable real-time synchronization with a single switch in the settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <div class="me-3" style="color: #017E84;">
+                                                    <i class="fa fa-check-circle fa-lg"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 style="color: #714B67;">Multi-terminal Sync</h5>
+                                                    <p style="color: #8F8F8F;">Keep all your POS terminals in perfect sync with the latest product information.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Tab -->
+                        <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="accordion" id="faqAccordion">
+                                        <div class="accordion-item" style="border: none; margin-bottom: 15px; border-radius: 12px !important; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+                                            <h2 class="accordion-header" id="faqHeadingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne" style="background-color: white; color: #212529; font-weight: 600; padding: 20px 25px; border: none; box-shadow: none;">
+                                                    What does the 'Auto Update Product in POS' module do?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body" style="padding: 20px 25px; background-color: white;">
+                                                    This module enhances Odoo's Point of Sale by automatically synchronizing product changes (like price changes, and product information) across POS sessions in real-time, eliminating the need for manual refreshes.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item" style="border: none; margin-bottom: 15px; border-radius: 12px !important; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+                                            <h2 class="accordion-header" id="faqHeadingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo" style="background-color: white; color: #212529; font-weight: 600; padding: 20px 25px; border: none; box-shadow: none;">
+                                                    How does the real-time synchronization work?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body" style="padding: 20px 25px; background-color: white;">
+                                                    The module uses Odoo's bus system to push updates to all connected POS sessions whenever product data changes in the backend. This ensures that all terminals have the most current information without requiring manual refresh.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item" style="border: none; margin-bottom: 15px; border-radius: 12px !important; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+                                            <h2 class="accordion-header" id="faqHeadingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree" style="background-color: white; color: #212529; font-weight: 600; padding: 20px 25px; border: none; box-shadow: none;">
+                                                    Can I disable the auto-update feature?
+                                                </button>
+                                            </h2>
+                                            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body" style="padding: 20px 25px; background-color: white;">
+                                                    Yes, the module includes a toggle switch in the POS settings that allows you to enable or disable the real-time synchronization feature as needed.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Releases Tab -->
+                        <div class="tab-pane fade" id="releases" role="tabpanel" aria-labelledby="releases-tab">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="changelog" style="background-color: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+                                        <h1 style="color: #714B67; margin-bottom: 20px;">Release Notes</h1>
+                                        <p style="color: #8F8F8F;">If you have any questions or if something isn't working as expected, please don't hesitate to contact us.</p>
+                                        
+                                        <h2 style="color: #714B67; margin: 40px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #e9ecef;"><a name="18.0.1.0.0">Version 18.0.1.0.0 - <span style="color: #017E84;">JANUARY, 2026</span></a></h2>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-sm" style="padding: 60px 0;">
+        <div class="container">
+            <div class="contact-section" style="background-color:#714B67; color: white; border-radius: 12px; padding: 60px 40px; position: relative; overflow: hidden;">
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6 contact-content" style="position: relative; z-index: 2;">
+                        <div class="company-logo" style="font-weight: 700; font-size: 1.8rem; color: white; text-decoration: none;">crew<span style="color: #017E84;">x</span>dev</div><p class="mb-4">Your trusted Odoo implementation partner</p><h2 class="mb-4" style="font-size: 1.5rem;color:#FFFFFF">Ready to Transform Your Business Experience?</h2>
+                        <p class="mb-4">Get in touch with our team to learn more about how we can streamline your business and your needs.</p>
+                        <div class="d-flex flex-wrap">
+                            <a href="https://www.crewxdev.com/" class="globe-btn d-flex ms-2" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 25px; border-radius: 10px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; text-decoration: none; transition: all 0.3s ease; margin-right: 15px; margin-bottom: 15px;">
+                                <div class="globe-icon" style="width: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.15);">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <span>crewxdev.com</span>
+                            </a>
+                            <a href="mailto:info@crewxdev.com" class="contact-btn d-flex ms-2" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 25px; border-radius: 10px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; text-decoration: none; transition: all 0.3s ease; margin-right: 15px; margin-bottom: 15px;">
+                                <div class="contact-icon" style="width: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.15);">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <span>info@crewxdev.com</span>
+                            </a>
+                            <a href="tel:+918300464064" class="contact-btn d-flex ms-2" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 25px; border-radius: 10px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; text-decoration: none; transition: all 0.3s ease; margin-right: 15px; margin-bottom: 15px;">
+                                <div class="contact-icon" style="width: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.15);">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <span>+91 8300464064</span>
+                            </a>
+                        </div>
+                    </div><div class="col-lg-6 text-center">
+                        <div class="">
+                            <img src="./assets/com/256x256.png" alt="Crewxdev" class="img-fluid">
+                        </div>
+                    <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fa fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:info@crewxdev.com" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fa fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.crewxdev.com/" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </a>
+                        </div></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="service"
+		style="box-sizing: border-box;padding: 70px 0; border-radius:15px; margin-bottom: 6rem !important;">
+		<div class="container"
+			style="box-sizing: border-box;--bs-gutter-x: 1.5rem;--bs-gutter-y: 0;width: 100%;padding-right: calc(var(--bs-gutter-x) * 0.5);padding-left: calc(var(--bs-gutter-x) * 0.5);margin-right: auto;margin-left: auto;max-width: 1440px;margin: 0 auto;">
+			<div class="row"
+				style="box-sizing: border-box;--bs-gutter-x: 1.5rem;--bs-gutter-y: 0;display: flex;flex-wrap: wrap;margin-top: calc(-1 * var(--bs-gutter-y));margin-right: calc(-0.5 * var(--bs-gutter-x));margin-left: calc(-0.5 * var(--bs-gutter-x));">
+				<div class="col-md-12"
+					style="box-sizing: border-box;flex-shrink: 0;width: 100%;max-width: 100%;padding-right: calc(var(--bs-gutter-x) * 0.5);padding-left: calc(var(--bs-gutter-x) * 0.5);margin-top: var(--bs-gutter-y);">
+					<div class="title_text" style="box-sizing: border-box;">
+						<h3 class="text-center"
+							style="box-sizing: border-box;margin-top: 0;margin-bottom: 0.5rem;font-weight: 700;line-height: 60px;color: #0E2D59;font-size: 40px;text-align: center;">
+							Our Services</h3>
+						    <center>
+							<hr
+								style="border: 3px solid #c4c4c4 !important; background-color: #c4c4c4 !important; width: 80px !important; margin-bottom: 2rem !important;" />
+						    </center>
+					</div>
+					<img src="assets/screenshots/service_image.png" style="width: 99.8%;border-radius: 25px;border: 1px solid #f1f1f1;" />
+				</div>
+			</div>
+			
+		</div>
+
+	</section>
+
+    <footer class="footer" style="background-color: #714B67; color: white; padding: 40px 0;">
+        <div class="container text-center">
+            <h1 style="margin-bottom: 10px;color: white;">🚀 100 Days Free Support</h1>
+            <p style="margin-bottom: 8px;">
+                We provide 100 days of dedicated support after delivery to ensure smooth setup,
+                bug fixes, and guidance.
+            </p>
+            <p style="font-size: 14px; color: #adb5bd;">
+                Support includes installation help, minor fixes, and usage guidance.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

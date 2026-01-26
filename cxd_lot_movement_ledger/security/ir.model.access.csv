@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lot_movement_ledger_user,lot.ledger.summary,model_lot_movement_ledger,base.group_user,1,0,0,0
+access_lot_movement_ledger_manager,lot.ledger.summary,model_lot_movement_ledger,base.group_system,1,0,0,0
+
+access_lot_ledger_summary_user,lot.ledger.summary,model_lot_ledger_summary,base.group_user,1,0,0,0
+access_lot_ledger_summary_manager,lot.ledger.summary,model_lot_ledger_summary,base.group_system,1,0,0,0
